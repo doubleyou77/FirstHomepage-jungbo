@@ -1,0 +1,59 @@
+a {
+    display: inline;
+}
+
+.contents {
+    outline : solid 1px;
+}
+
+#logo2 {
+    position: relative;
+    top: 158px;
+    left: 120px;
+}
+.login_input {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+    outline : solid 1px;
+}
+#speaker {
+    font-size:30px;
+    position: relative;
+    top: 50px;
+}
+
+.login_input span {
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+
+#inputID {
+    position: relative;
+    left: 30px;
+    display: inline;
+}
+
+#inputPW {
+    position: relative;
+    left: 10px;
+    display: inline;
+}
+
+#login_button {
+    width: 60px;
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    display: inline;
+}
+
+#login_search {
+    font-size: 13px;
+    position: absolute;
+    top: 130px;
+}

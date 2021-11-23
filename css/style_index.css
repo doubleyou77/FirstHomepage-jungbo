@@ -1,0 +1,31 @@
+.middlebox {
+    position: relative;
+    height: 300px;
+    top: 50px;
+}
+
+
+#middle_item1 {
+    float:left;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border :1px solid black;
+}
+
+#middle_item2 {
+    float:left;
+    left: 45px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border :1px solid black;
+}
+
+#middle_item3 {
+    float:right;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border :1px solid black;
+}

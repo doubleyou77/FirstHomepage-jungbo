@@ -1,0 +1,23 @@
+a {
+    display: inline;
+}
+
+#speaker {
+    font-size:30px;
+    position: relative;
+    top: 50px;
+}
+
+.register_setting {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+
+#register2_button {
+    position: relative;
+    top: 50px;
+    right: 215px;
+}

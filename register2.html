@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>4반놈즈</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style_register2.css" rel="stylesheet">
+        <script src="js/jquery-1.12.3.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="로고" style="width:280px; height:64px;"></a>
+                </div>
+                <div class="login_before">
+                    <ul>
+                        <li><a href="login.html"><span>로그인</span></a></li>
+                        <li><a href="register.html"><span>회원가입</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <nav class="menu">
+                    <ul class="navi">
+                        <li><a href="menuinformation.html">학교일정</a>
+                            <ul class="submenu">
+                                <li><a href="school_calendar/schoolcalendar.html">학교일정</a></li>
+                                <li><a href="school_calendar/class4information.html">4반 정보</a></li>
+                                <li><a href="school_calendar/curriculum.html">교과 정리</a></li>
+                                <li><a href="school_calendar/testrange.html">시험 범위</a></li>
+                                <li><a href="school_calendar/performanceevaluationinformation.html">수행평가 정보</a></li>
+                                <li><a href="school_calendar/schedule.html">시간표</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="menuinformation.html">온라인수업</a>
+                            <ul class="submenu">
+                                <li><a href="online class/prints.html">인쇄물</a></li>
+                                <li><a href="online class/tip.html">수업 tip</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="menuinformation.html">자료실</a>
+                            <ul class="submenu">
+                                <li><a href="Room/major.html">전공 자료실</a></li>
+                                <li><a href="Room/nonmajor.html">비전공 자료실</a></li>
+                                <li><a href="Room/information.html">정보 자료실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="menuinformation.html">사이트바로가기</a>
+                            <ul class="submenu">
+                                <li><a href="site/googleclassroom.html">구글 클래스룸</a></li>
+                                <li><a href="site/EBS.html">EBS 온라인 클래스</a></li>
+                                <li><a href="site/sunringoorm.html">선린 구름</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="contents">
+            <span id="speaker">회원가입<hr></span>
+            <form class="register_setting" action="#">
+                <input id="register_firstname" type="text" placeholder="성*" value="" style="height:20px;">
+                <input id="register_lastname" type="text" placeholder="이름*" style="height:20px;"><br>
+                <input id="register_phonenumber" type="text" placeholder="휴대폰 번호 또는 이메일*" style="width:305px;height:20px;">
+                <button id="register2_button" style="width:100px;height:50px;">회원가입</button>
+            </form>
+        </div>
+
+        <script>
+            const register2_button = document.getElementById("register2_button");
+
+            register2_button.addEventListener('click', () => {
+                let register_firstname = document.getElementById("register_firstname").value;
+                let register_lastname = document.getElementById("register_lastname").value;
+                let register_phonenumber = document.getElementById("register_phonenumber").value;
+                if(register_firstname != "" && register_lastname != "" && register_phonenumber != ""){
+                    alert('회원가입에 성공하셨습니다!')
+                    link_url = './index.html'
+                    location.replace(link_url);
+                    event.preventDefault()
+                }
+                else
+                    alert('값을 입력하세요')
+            })
+
+        </script>
+        <footer>
+
+        </footer>
+    </body>
+</html>
