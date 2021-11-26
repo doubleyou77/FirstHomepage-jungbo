@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <title>4반놈즈</title>
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/style_index.css" rel="stylesheet">
         <script src="js/jquery-1.12.3.js"></script>
         <script src="js/script.js"></script>
     </head>
@@ -24,30 +23,30 @@
             <div class="bottom">
                 <nav class="menu">
                     <ul class="navi">
-                        <li><a href="menuinformation.html">학교일정</a>
+                        <li><a onclick="redirect('menuinformation.html')" style="cursor:pointer;">학교일정</a>
                             <ul class="submenu">
-                                <li><a href="school_calendar/schoolcalendar.html">학교일정</a></li>
-                                <li><a href="school_calendar/class4information.html">4반 정보</a></li>
-                                <li><a href="school_calendar/curriculum.html">교과 정리</a></li>
-                                <li><a href="school_calendar/testrange.html">시험 범위</a></li>
-                                <li><a href="school_calendar/performanceevaluationinformation.html">수행평가 정보</a></li>
-                                <li><a href="school_calendar/schedule.html">시간표</a></li>
+                                <li><a onclick="redirect('school_calendar/schoolcalendar.html')" style="cursor:pointer;">학교일정</a></li>
+                                <li><a onclick="redirect('school_calendar/class4information.html')" style="cursor:pointer;">4반 정보</a></li>
+                                <li><a onclick="redirect('school_calendar/curriculum.html')" style="cursor:pointer;">교과 정리</a></li>
+                                <li><a onclick="redirect('school_calendar/testrange.html')" style="cursor:pointer;">시험 범위</a></li>
+                                <li><a onclick="redirect('school_calendar/performanceevaluationinformation.html')" style="cursor:pointer;">수행평가 정보</a></li>
+                                <li><a onclick="redirect('school_calendar/schedule.html')" style="cursor:pointer;">시간표</a></li>
                             </ul>
                         </li>
-                        <li><a href="menuinformation.html">온라인수업</a>
+                        <li><a onclick="redirect('menuinformation.html')" style="cursor:pointer;">온라인수업</a>
                             <ul class="submenu">
-                                <li><a href="online class/prints.html">인쇄물</a></li>
-                                <li><a href="online class/tip.html">수업 tip</a></li>
+                                <li><a onclick="redirect('online class/prints.html')" style="cursor:pointer;">인쇄물</a></li>
+                                <li><a onclick="redirect('online class/tip.html')" style="cursor:pointer;">수업 tip</a></li>
                             </ul>
                         </li>
-                        <li><a href="menuinformation.html">자료실</a>
+                        <li><a onclick="redirect('menuinformation.html')" style="cursor:pointer;">자료실</a>
                             <ul class="submenu">
-                                <li><a href="Room/major.html">전공 자료실</a></li>
-                                <li><a href="Room/nonmajor.html">비전공 자료실</a></li>
-                                <li><a href="Room/information.html">정보 자료실</a></li>
+                                <li><a onclick="redirect('Room/major.html')" style="cursor:pointer;">전공 자료실</a></li>
+                                <li><a onclick="redirect('Room/nonmajor.html')" style="cursor:pointer;">비전공 자료실</a></li>
+                                <li><a onclick="redirect('Room/information.html')" style="cursor:pointer;">정보 자료실</a></li>
                             </ul>
                         </li>
-                        <li><a href="menuinformation.html">사이트바로가기</a>
+                        <li><a onclick="redirect('menuinformation.html')" style="cursor:pointer;">사이트바로가기</a>
                             <ul class="submenu">
                                 <li><a href="site/googleclassroom.html">구글 클래스룸</a></li>
                                 <li><a href="site/EBS.html">EBS 온라인 클래스</a></li>
@@ -59,28 +58,15 @@
             </div>
         </header>
 
-        <div class="contents">
-            <div class="imgslide">
-                <a href="#"><img src="images/1.png" alt="1"></a>
-                <a href="#"><img src="images/2.png" alt="2"></a>
-                <a href="#"><img src="images/3.png" alt="3"></a>
-            </div>
-            
-            <div class="middlebox">
-                <div id="middle_item1">
-                    <img src="images/수행.png">
-                </div>
-                <div id="middle_item2">
-                    <img src="images/급식.png">
-                </div>
-                <div id="middle_item3">
-                    <img src="images/이슈.png">
-                </div>
-            </div>
-        </div>
+        <iframe src="main.html" id="contents" width="1000px" height="800px"></iframe>
     <!-- 
         <footer>
 
         </footer> -->
+        <script>
+            redirect = name => {
+                document.getElementById('contents').src = name;    
+            }
+        </script>
     </body>
 </html>
