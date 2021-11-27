@@ -128,3 +128,9 @@ footer {
     position:relative;
     background-color: black;
 }
+
+.contents {
+    max-height: 1500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

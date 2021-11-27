@@ -8,12 +8,11 @@
         <script src="../js/script.js"></script>
     </head>
     <body>
-        <div class="contents">
-            <div class="students">
-                <ul id="list">
+        <span id="speaker">4반 정보<hr></span>
+        <div class="students">
+            <ul id="list">
 
-                </ul>
-            </div>
+            </ul>
         </div>
 
         <script>
@@ -22,9 +21,11 @@
             for(let i = 0; i < 23; i++) {
                 var temp = document.createElement('li');
                 let ID= 10400+i+1
-                temp.innerHTML = ID+studentnames[i];
+                temp.innerHTML = `<a class="class4">${ID} ${studentnames[i]}</a>`;
                 list.appendChild(temp);
+                console.log(temp)
             }
         </script>
+        <link href="../css/style_class4information.css" rel="stylesheet">
     </body>
 </html>
