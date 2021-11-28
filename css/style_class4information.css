@@ -1,3 +1,4 @@
+
 #speaker {
     font-size:30px;
     position: relative;
@@ -7,6 +8,8 @@
 .students {
     position: relative;
     top: 50px;
+    width: 800px;
+    float: left;
 }
 
 #list {
@@ -14,9 +17,17 @@
 }
 
 li {
-    display: inline;
+    display: block;
 }
 
 .class4 {
     padding: 5px;
 }
+
+#studentcontent {
+    position: relative;
+    top: 200px;
+    width: 800px;
+    float: left;
+}
+

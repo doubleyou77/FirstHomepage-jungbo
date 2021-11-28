@@ -4,8 +4,6 @@
         <meta charset="UTF-8">
         <title>4반놈즈</title>
         <link href="../css/style.css" rel="stylesheet">
-        <script src="../js/jquery-1.12.3.js"></script>
-        <script src="../js/script.js"></script>
     </head>
     <body>
         <span id="speaker">4반 정보<hr></span>
@@ -15,15 +13,28 @@
             </ul>
         </div>
 
+        <ul id="studentcontent">
+            <span id="speaker2">상세정보<hr></span>
+        </ul>
+
         <script>
             const list = document.getElementById('list');
             let studentnames = ['김규린', '이수아', '이정인', '이지현', '진다은', '강민재', '김대희', '김도완', '김승태', '김준희', '김형진', '박민제', '박희찬', '성현민', '여준혁', '윤도현', '이규행', '이동욱', '이원형', '이준희', '장인수', '조상진', '조성우']
             for(let i = 0; i < 23; i++) {
-                var temp = document.createElement('li');
+                let temp = document.createElement('li');
                 let ID= 10400+i+1
-                temp.innerHTML = `<a class="class4">${ID} ${studentnames[i]}</a>`;
+                temp.innerHTML = `<a class="class4" href="#${ID}">${ID} ${studentnames[i]}</a>`;
                 list.appendChild(temp);
-                console.log(temp)
+            }
+
+            const studentcontent = document.getElementById('studentcontent');
+            for(let i=0;i<23;i++) {
+                let temp = document.createElement('li');
+                let ID= 10400+i+1
+                temp.innerHTML = `<a class="class4" id="${ID}">${ID} ${studentnames[i]}</a>
+                <li>추가예정</li><br><br>`;
+                studentcontent.appendChild(temp);
+
             }
         </script>
         <link href="../css/style_class4information.css" rel="stylesheet">

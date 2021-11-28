@@ -2,9 +2,38 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>4반놈즈</title>
+    <link href="../css/style_curriculum.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <span id="speaker">4반 정보<hr></span>
+    <div class="subject">
+        <ul id="majorlist">
+            <h4>전공 과목</h4>
+        </ul>
+        <br>
+        <ul id="nonmajorlist">
+            <h4>비전공 과목</h4>
+        </ul>
+    </div>
+    <script>
+        const majorlist = document.getElementById('majorlist');
+        const nonmajorlist = document.getElementById('nonmajorlist');
+
+        const majorsubject = ['AI', '프그', '디자인', '시스템', '정보', '동아리']
+        const nonmajorsubject = ['국어', '수학', '사회', '과학', '영어', '체육', '보건', '음악', '자율', '진로']
+        for(let i = 0; i < 6; i++) {
+            let temp = document.createElement('li');
+            let ID= majorsubject[i]
+            temp.innerHTML = `<a class="class4" href="#${ID}">${majorsubject[i]}</a>`;
+            majorlist.appendChild(temp);
+        }
+        for(let i = 0;i<10;i++) {
+            let temp = document.createElement('li');
+            let ID= nonmajorsubject[i]
+            temp.innerHTML = `<a class="class4" href="#${ID}">${nonmajorsubject[i]}</a>`;
+            nonmajorlist.appendChild(temp);
+        }
+    </script>
 </body>
 </html>
