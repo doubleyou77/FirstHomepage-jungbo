@@ -1,0 +1,9 @@
+.paper {
+    position: relative;
+    top: 50px;
+    float:left;
+    width: 200px;
+    height: 330px;
+    position: relative;
+    border :1px solid black;
+}

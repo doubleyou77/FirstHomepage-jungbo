@@ -1,0 +1,16 @@
+#speaker {
+    font-size:30px;
+    position: relative;
+    top: 50px;
+}
+table {
+    position: relative;
+    top: 50px;
+}
+.week {
+    padding: 30px;
+}
+
+.subject {
+    padding: 30px;
+}

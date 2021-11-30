@@ -116,21 +116,27 @@ header {
 	background-color:#c9463d;
 }
 
-.contents {
+/* .contents {
 	height:500px;
 	width:1000px;
-}
+} */
 
-.imgslide {
-	height:350px;
-	width:1000px;
-	position:relative;
-	overflow:hidden;
-}
 
 footer {
     width: 1000px;
     height: 100px;
     position:relative;
     background-color: black;
+}
+
+#contents {
+    max-height: 1500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#speaker {
+    font-size:30px;
+    position: relative;
+    top: 50px;
 }

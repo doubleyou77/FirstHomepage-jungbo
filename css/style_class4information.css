@@ -1,0 +1,33 @@
+
+#speaker {
+    font-size:30px;
+    position: relative;
+    top: 50px;
+}
+
+.students {
+    position: relative;
+    top: 50px;
+    width: 800px;
+    float: left;
+}
+
+#list {
+    border : 1px solid #ffffff;
+}
+
+li {
+    display: block;
+}
+
+.class4 {
+    padding: 5px;
+}
+
+#studentcontent {
+    position: relative;
+    top: 200px;
+    width: 800px;
+    float: left;
+}
+
