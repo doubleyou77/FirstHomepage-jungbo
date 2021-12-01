@@ -8,8 +8,40 @@
 </head>
 <body>
     <span id="speaker">학교일정<hr></span>
-    <div>
-        <h1>추가예정</h1>
-    </div>
+    <table id="table">
+        <tr id="ex">
+            <th id="number">번호</th><th id="title">제목</th><th id="maker">작성자</th><th id="day">기간</th><th id="
+            views">조회수</th>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+
+    <script>
+        let table = document.getElementById('table');
+        title = ['일정', '학교', '여러가지','학교일정','학교일정','학교일정']
+        maker = ['김형진', '김형진', '김형진','김형진', '김형진', '김형진']
+        day = ['2021-11-30', '2022-1-30', '2021-12-01','2021-12-10','2021-12-25','2022-1-13']
+        views = [1, 77, 0,10,24,21]
+        for(let i = title.length-1;i>=0;i--) {
+            let tr = document.createElement('tr');
+            let td = document.createElement('td');
+            let tdtitle = document.createElement('td');
+            let tdmaker = document.createElement('td');
+            let tdday = document.createElement('td');
+            let tdviews = document.createElement('td');
+            td.innerHTML = `<a href="#"> ${i+1}</a>`
+            tdtitle.innerHTML = `<a href="#">${title[i]}</a>`
+            tdmaker.innerHTML = `<a href="#">${maker[i]}</a>`
+            tdday.innerHTML = `<a href="#">${day[i]}</a>`
+            tdviews.innerHTML = `<a href="#">${views[i]} </a>`
+            tr.appendChild(td);
+            tr.appendChild(tdtitle);
+            tr.appendChild(tdmaker);
+            tr.appendChild(tdday);
+            tr.appendChild(tdviews);
+            table.appendChild(tr);
+        } 
+    </script>
 </body>
 </html>

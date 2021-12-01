@@ -8,8 +8,9 @@
 </head>
 <body>
     <span id="speaker">비전공자료실<hr></span>
+    <input id="adddata" type="button" value="글쓰기">
     <table id="table">
-        <tr>
+        <tr id="ex">
             <th id="number">번호</th><th id="title">제목</th><th id="maker">작성자</th><th id="day">작성일</th><th id="
             views">조회수</th>
         </tr>
@@ -19,10 +20,10 @@
 
     <script>
         let table = document.getElementById('table');
-        title = ['여러가지', '데이터']
-        maker = ['김형진', '김형진']
-        day = ['2021-11-30', '2021-11-30']
-        views = [1, 77]
+        title = ['여러가지', '데이터', '자료실']
+        maker = ['김형진', '김형진', '김형진']
+        day = ['2021-11-30', '2021-11-30', '2021-12-01']
+        views = [1, 77, 0]
         for(let i = 0;i<title.length;i++) {
             let tr = document.createElement('tr');
             let td = document.createElement('td');

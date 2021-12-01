@@ -1,3 +1,12 @@
+#adddata {
+    position: relative;
+    top:50px;
+    width: 80px;
+    background-color: #005aa3;
+    color: #ffffff;
+    border: 0;
+}
+
 table {
     position: relative;
     top: 50px;
@@ -14,4 +23,20 @@ th {
 
 #day {
     padding-left: 40px;
+}
+
+td {
+    outline: 1px solid;
+}
+
+tr:nth-child(odd) {
+    background-color: #f7f7f7;
+  }
+  
+tr:nth-child(even) {
+    background-color: #c5c5c5;
+}
+
+#ex {
+    background-color: #ffffff;
 }

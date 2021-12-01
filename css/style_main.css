@@ -1,8 +1,9 @@
 .imgslide {
 	height:350px;
-	width:900px;
+	width:990px;
 	position:relative;
 	overflow:hidden;
+    outline: 1px solid black;
 }
 
 .middlebox {

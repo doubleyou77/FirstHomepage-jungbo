@@ -11,6 +11,10 @@ table {
     padding: 30px;
 }
 
+td {
+    outline: 1px solid;
+}
+
 .subject {
     padding: 30px;
 }

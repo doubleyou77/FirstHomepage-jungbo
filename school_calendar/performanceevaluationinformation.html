@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <title>4반놈즈</title>
     <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/style_schoolcalendar.css" rel="stylesheet">
+    <link href="../css/style_performanceevaluationinformation.css" rel="stylesheet">
 </head>
 <body>
     <span id="speaker">수행평가정보<hr></span>
     <div>
-        <h1>추가예정</h1>
+        <table>
+            <caption style="font-size:50px">12월</caption>
+            <tr>
+                <th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th><th>일</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td>1</td><td>2<img src="../images/exp.png"></td><td>3</td><td>4</td><td>5</td>
+            </tr>
+            <tr>
+                <td onclick="ViewLayer();">6<img src="../images/exp.png"></td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+            </tr>
+            <tr>
+                <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+            </tr>
+            <tr>
+                <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+            </tr>
+            <tr>
+                <td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td>
+            </tr>
+        </table>
     </div>
+    
+    <div class="content6" id="pop">
+        <div class="content6" id="title6">프로그래밍 수행평가</div>
+        <div class="content6" id="content6">세부사항</div>
+        <a id="exit" onclick="NoLayer();">x</a>
+    </div>
+    <script>
+        function ViewLayer(){
+            document.getElementById("pop").style.display='inline';
+        }
+
+        function NoLayer() {
+            document.getElementById("pop").style.display='none';
+        }
+
+    </script>
+
+
+
 </body>
 </html>
