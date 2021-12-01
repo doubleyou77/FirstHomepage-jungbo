@@ -1,0 +1,48 @@
+ul {
+    position: relative;
+    top: 50px;
+}
+
+li {
+    display: block;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.content6 {
+    display:inline-block;
+    outline: 1px solid;
+}
+
+#pop {
+    position:absolute;
+    left:100px;
+    top: 150px;
+    width:800px;
+    height:500px;
+    z-index:1; 
+    background-color: #c9f5a5;
+    display:none;
+}
+
+#exit {
+    float:right;
+    position: relative;
+    bottom: 60px;
+    width:30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: hand;
+}
+
+#title6 {
+    padding: 20px;
+}
+
+#content6 {
+    width: 700px;
+    height: 400px;
+    margin: 20px;
+}

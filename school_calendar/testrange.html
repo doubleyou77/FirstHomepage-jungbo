@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <title>4반놈즈</title>
     <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/style_schoolcalendar.css" rel="stylesheet">
+    <link href="../css/style_testrange.css" rel="stylesheet">
 </head>
 <body>
     <span id="speaker">시험범위<hr></span>
     <div>
+        <ul>
+            <li onclick="ViewLayer('국어');">국어</li>
+            <li onclick="ViewLayer('수학');">수학</li>
+            <li onclick="ViewLayer('영어');">영어</li>
+            <li onclick="ViewLayer('통합사회');">통합사회</li>
+            <li onclick="ViewLayer('통합과학');">통합과학</li>
+            <li onclick="ViewLayer('컴퓨터시스템일반');">컴퓨터시스템일반</li>
+            <li onclick="ViewLayer('인공지능과 미래사회');">인공지능과 미래사회</li>
+        </ul>
     </div>
+
+    <div class="content6" id="pop">
+    </div>
+
+    <script>
+        const pop = document.getElementById('pop');
+        
+        function ViewLayer(subject){
+            pop.style.display='inline';
+            pop.innerHTML = `<div class="content6" id="title6">${subject} 시험범위</div>
+                             <div class="content6" id="content6">세부사항</div>
+                             <a id="exit" onclick="NoLayer();">x</a>`;
+        }
+
+        function NoLayer() {
+            pop.style.display='none';
+        }
+    </script>
 </body>
 </html>
