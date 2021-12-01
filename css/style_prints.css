@@ -7,3 +7,13 @@
     position: relative;
     border :1px solid black;
 }
+
+.paper2 {
+    position: relative;
+    top: 50px;
+    float:left;
+    width: 200px;
+    height: 330px;
+    position: relative;
+    border :2px dotted black;
+}
